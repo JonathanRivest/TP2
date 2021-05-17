@@ -845,7 +845,7 @@ menu tablet
     flex-direction: column;
     justify-content: flex-start;
     width: 400px;
-    animation: anim-sous-menu .5s both;
+    animation: anim-sous-menu 0.5s both;
   }
   .main-navigation.toggled ul ul,
   .main-navigation ul ul {
@@ -856,11 +856,9 @@ menu tablet
 @keyframes anim-sous-menu {
   0% {
     opacity: 0;
-    transform: translateX(0) translateY(100px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0) translateY(0);
   }
 }
 
@@ -1360,6 +1358,8 @@ Le bouton buger
   position: relative;
   width: 2rem;
   height: 2rem;
+  background-color: #292929;
+  border: 2px solid #c5c5c5;
   overflow: hidden;
 }
 
@@ -1372,17 +1372,17 @@ Le bouton buger
 }
 
 #burger div:nth-of-type(1) {
-  background-color: #3ddada;
+  background-color: blue;
   clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
 }
 
 #burger div:nth-of-type(2) {
-  background-color: #3d79da;
+  background-color: blue;
   clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
 }
 
 #burger div:nth-of-type(3) {
-  background-color: #dab03d;
+  background-color: blue;
   clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
 }
 
@@ -1395,6 +1395,7 @@ La barre du haut
   }
   100% {
     clip-path: polygon(3% -3%, 103% 97%, 97% 103%, -3% 3%);
+    background-color: red;
   }
 }
 
@@ -1408,11 +1409,11 @@ La barre du haut
 }
 
 .ouvreX1 {
-  animation: ouvreX1 0.1s both;
+  animation: ouvreX1 0.07s both;
 }
 
 .fermeX1 {
-  animation: fermeX1 0.1s both;
+  animation: fermeX1 0.07s both;
 }
 
 /* -----------------------------------------------------------------------------------
@@ -1424,6 +1425,7 @@ La barre du bas
   }
   100% {
     clip-path: polygon(-3% 97%, 97% -3%, 103% 3%, 3% 103%);
+    background-color: red;
   }
 }
 
@@ -1437,11 +1439,11 @@ La barre du bas
 }
 
 .ouvreX3 {
-  animation: ouvreX3 0.1s both;
+  animation: ouvreX3 0.07s both;
 }
 
 .fermeX3 {
-  animation: fermeX3 0.1s both;
+  animation: fermeX3 0.07s both;
 }
 
 /* -----------------------------------------------------------------------------------
@@ -1466,11 +1468,11 @@ La barre du millieu
 }
 
 .ouvreX2 {
-  animation: ouvreX2 0.1s both;
+  animation: ouvreX2 0.07s both;
 }
 
 .fermeX2 {
-  animation: fermeX2 0.1s both;
+  animation: fermeX2 0.07s both;
 }
 
 @media (min-width: 1200px) {
