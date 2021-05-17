@@ -1,9 +1,11 @@
+/* Styles s'appliquant à toutes les pages */
+
 body {
     background-color : #4a4a4a;
     color: black;
 }
 
-body::after{
+body::after{ /* Polygone bleu en arrière-plan */
     content: "";
     position : absolute;
     width: 100%;

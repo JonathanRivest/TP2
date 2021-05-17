@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: rivest-jonathan-4w4
 Theme URI: http://underscores.me/
@@ -1109,6 +1110,7 @@ menu tablet
 /* local
 --------------------------------------------- */
 body.home {
+  /* .home s'applique uniquement à l'accueil */
   height: 500vh;
   width: 100vw;
   overflow-x: hidden;
@@ -1137,6 +1139,7 @@ body.home {
 }
 
 .site-description {
+  /* "Un site utilisant wordpress */
   margin-top: 0;
   font-family: "Montserrat", monospace;
   font-weight: normal;
@@ -1268,6 +1271,7 @@ Liste des blocs de cours par type_de_cours
 }
 
 .carrousel-2 .slide__conteneur .slide {
+  /* Styles des carrés dans la page d'accueil */
   width: 100%;
   height: 150px;
   margin-bottom: 30px;
@@ -1312,6 +1316,7 @@ Liste des blocs de cours par type_de_cours
 }
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(1) {
+  /* Syles principaux des carrés du carrousel */
   background-color: black;
 }
 
@@ -1477,6 +1482,7 @@ La barre du millieu
 
 @media (min-width: 1200px) {
   #wp-calendar {
+    /* Centre le calendrier sur le format desktop uniquement */
     padding-right: 25%;
     padding-left: 25%;
   }
@@ -1487,7 +1493,12 @@ La barre du millieu
 }
 
 #secondary {
+  /* Se trouve à droite de la page */
   padding-left: 4%;
+}
+
+.admin-rapid {
+  /*Formulaire pour ajouter un article */
 }
 
 @media (min-width: 1200px) {
@@ -1497,12 +1508,14 @@ La barre du millieu
   }
 }
 
+/* Styles s'appliquant à toutes les pages */
 body {
   background-color: #4a4a4a;
   color: black;
 }
 
 body::after {
+  /* Polygone bleu en arrière-plan */
   content: "";
   position: absolute;
   width: 100%;
@@ -1545,6 +1558,7 @@ body::after {
   width: 100%;
   height: 100%;
   transition: transform 0.6s;
+  /* Se rapporte à l'animation "card-flip" des images */
   transform-style: preserve-3d;
 }
 

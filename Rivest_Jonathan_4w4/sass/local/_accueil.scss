@@ -1,4 +1,4 @@
-body.home{
+body.home{ /* .home s'applique uniquement à l'accueil */
 
     height : 500vh;
     width : 100vw;
@@ -33,7 +33,7 @@ body.home{
     }
 }
 
-.site-description {
+.site-description { /* "Un site utilisant wordpress */
     margin-top : 0;
     font-family: $font__sitetitle ;
     font-weight: normal;

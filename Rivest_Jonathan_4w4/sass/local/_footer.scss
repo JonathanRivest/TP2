@@ -1,7 +1,7 @@
 
 
 #wp-calendar {
-    @include desktop {
+    @include desktop { /* Centre le calendrier sur le format desktop uniquement */
         padding-right: 25%;
         padding-left: 25%;
     }
